@@ -18,11 +18,6 @@ export default {
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
-  			},
-  			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
@@ -36,11 +31,21 @@ export default {
   				DEFAULT: 'hsl(var(--muted))',
   				foreground: 'hsl(var(--muted-foreground))'
   			},
+			black:{
+				dark:'hsl(var(--black-dark))',
+				light:"hsl(var(--black-light))"
+			},
+			green:{
+				DEFAULT:"hsl(var(--green))"
+			}
   			
   		
   		},
 		  backgroundImage: {
 			'hero-pattern': "url('/bg_img.png')",
+			'hero-pattern-three': "url('/hero_thrid_bg.png')",
+			'token-bg': "url('/token_bg.png')",
+			'map-bg': "url('/map.png')",
 		  },
   	}
   },

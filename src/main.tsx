@@ -4,6 +4,8 @@ import App from './App.tsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from "./pages/Home"
+import 'owl.carousel/dist/assets/owl.carousel.css'; {/* this line */}
+import 'owl.carousel/dist/assets/owl.theme.default.css'; {/* this line */}
 
 const router = createBrowserRouter([
   {
