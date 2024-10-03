@@ -80,7 +80,7 @@ const Footer = ({ isMainMenu = false }) => {
         className={`text-sm text-center flex justify-between items-center max-lg:flex-wrap max-lg:justify-center`}
       >
         <div className="text-[10px] sm:text-sm 2xl:text-lg max-lg:order-2 max-lg:basis-full text-[#FEFEFE]">
-          &copy; 2024 DeRent. All Right Reserved
+          &copy; 2024 RCO Finance. All Right Reserved
         </div>
         <div className="flex lg:space-x-24 items-center max-lg:flex-wrap max-lg:justify-center">
           <div className="flex space-x-24 max-lg:order-2 max-lg:mb-8">
