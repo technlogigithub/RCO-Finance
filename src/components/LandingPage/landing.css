@@ -1,5 +1,5 @@
 .font-24{
-    @apply text-2xl font-bold
+    @apply text-[18px] 2xl:text-2xl font-bold
 }
 
 

@@ -10,8 +10,8 @@ const Navbar = () => {
     ];
   
     return (
-      <nav className="  min-w-[240px] max-md:max-w-full px-4">
-        <ul className="flex flex-wrap navbar-menu font-rubik self-stretch xxl:px-6 xl:px-1 lg:px-0 py-3 my-auto rounded-lg max-md:px-5 gap-7 items-center  text-base text-secondary whitespace-nowrap">
+      <nav className="  min-w-[240px] max-md:max-w-full max-lg:pt-14 max-h-[calc(100vh_-_330px)] overflow-y-auto">
+        <ul className="flex flex-wrap max-lg:flex-col navbar-menu font-rubik self-stretch xxl:px-6 xl:px-1 lg:px-0 py-3 my-auto rounded-lg max-md:px-5 gap-7 items-center text-2xl lg:text-sm  2xl:text-base text-secondary whitespace-nowrap">
           {navigationItems.map((item, index) => (
             <li key={index} className="border-b-2 border-transparent hover:border-white">
               {item.id ? (

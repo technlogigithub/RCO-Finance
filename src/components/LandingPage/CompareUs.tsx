@@ -147,7 +147,7 @@ const CompareUs = () => {
             </li>
           ))}
         </ul>
-        <div className="flex gap-4 mt-16">
+        <div className="flex gap-4 mt-16 max-xl:flex-wrap">
           {compareBox.map((item) => (
             <Cards
               classNames="h-auto w-auto text-left"

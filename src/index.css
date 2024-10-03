@@ -90,8 +90,11 @@
 .font-satoshi {
   font-family: "Satoshi", sans-serif;
 }
+.menu-open{
+  @apply overflow-hidden
+}
 h1{
-  @apply leading-[135px] text-[110px]
+  @apply leading-[114px] 2xl:leading-[135px] text-[92px] 2xl:text-[110px]
 }
 h2{
   @apply leading-[74px] text-[60px];
@@ -164,4 +167,7 @@ p {
 }
 .offerCarousel.owl-carousel .owl-stage{
   @apply !pl-0
+}
+.owl-theme .owl-nav.disabled + .owl-dots{
+  @apply relative z-10 !-mt-[48px]
 }

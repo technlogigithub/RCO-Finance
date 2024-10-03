@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faFacebook, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { IconLogo } from "../Icons/Icons";
 import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
 
-const Footer = ({ isMainMenu = false }) => {
+const Footer = ({ isMainMenu = true }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const socialMediaIcons = [
     {
@@ -50,11 +51,9 @@ const Footer = ({ isMainMenu = false }) => {
   };
   return (
     <footer
-      className={`z-30 relative bg-dark-black text-white px-5 sm:px-10 lg:px-20 ${
-        !isMainMenu ? "py-24" : "max-lg:pt-12 lg:py-20 max-lg:pb-4"
-      }`}
+      className={cn("z-30 relative bg-dark-black text-white px-5 sm:px-10 lg:px-20", !isMainMenu ? "py-8" : "max-lg:pt-12 lg:py-20 max-lg:pb-2")}
     >
-
+{isMainMenu && (
         <div className="flex justify-center lg:justify-between items-center pb-8 lg:pb-20 max-lg:flex-wrap">
           <Link to={"/"} className="mr-8">
             <IconLogo/>
@@ -75,18 +74,19 @@ const Footer = ({ isMainMenu = false }) => {
             ))}
           </ul>
         </div>
-
+)}
       <div
         className={`text-sm text-center flex justify-between items-center max-lg:flex-wrap max-lg:justify-center`}
       >
-        <div className="text-[10px] sm:text-sm 2xl:text-lg max-lg:order-2 max-lg:basis-full text-[#FEFEFE]">
+        <div className={cn("text-[10px] sm:text-sm 2xl:text-lg max-lg:order-2 max-lg:basis-full text-[#FEFEFE]", !isMainMenu ? "hidden" : "flex")}>
           &copy; 2024 DeRent. All Right Reserved
         </div>
-        <div className="flex lg:space-x-24 items-center max-lg:flex-wrap max-lg:justify-center">
-          <div className="flex space-x-24 max-lg:order-2 max-lg:mb-8">
+        <div className="flex lg:space-x-24 items-center max-lg:flex-wrap max-lg:justify-center w-full">
+          <div className={cn("flex space-x-24 max-lg:order-2 w-full", !isMainMenu && "justify-between mt-6" )}>
             <Link to={"/"} className="underline text-extra-[#FEFEFE] max-w-sm:font-normal text-xs sm:text-sm">
               Terms of Use
             </Link>
+            <div className={cn("text-[10px] sm:text-sm   text-[#FEFEFE]", isMainMenu ? "hidden" : "flex")}>&copy; 2024 DeRent. All Right Reserved</div>
             <Link to={"/"} className="underline text-extra-[#FEFEFE] max-w-sm:font-normal text-xs sm:text-sm">
               Privacy Policy
             </Link>

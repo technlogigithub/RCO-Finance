@@ -47,6 +47,9 @@ export default {
 			'token-bg': "url('/token_bg.png')",
 			'map-bg': "url('/map.png')",
 		  },
+		  screens:{
+			lg:"1199px"
+		  }
   	}
   },
   plugins: [require("tailwindcss-animate")],
