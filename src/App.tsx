@@ -8,10 +8,10 @@ function App() {
 
 
   return (
-    <div className="bg-hero-pattern w-full h-[700px] 2xl:h-[1130px] bg-top bg-cover bg-no-repeat">
+    <div className="bg-foreground">
       <Header/>
       <Outlet/>
-      <div className="bg-foreground"><Footer/></div>
+      <Footer/>
     </div>
   )
 }

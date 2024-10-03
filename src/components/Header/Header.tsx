@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="lg:px-20 md:px-10 py-5">
+      <div className="lg:px-20 md:px-10 py-5 absolute top-0 w-full z-50">
         <header className="flex z-10 flex-wrap gap-10 justify-between items-center w-full max-md:max-w-full">
             <div className="flex gap-2 items-center self-stretch my-auto">
                 <Link to="/"><IconLogo/></Link>
