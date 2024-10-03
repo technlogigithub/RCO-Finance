@@ -1,4 +1,4 @@
-import React from "react";
+
 import Container from "../shared/Container";
 import OwlCarousel from "react-owl-carousel";
 import Cards from "../shared/Cards";

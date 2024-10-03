@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
-import useMediaQuery from "../../hooks/useMediaQuery";
 import Navbar from "./Navbar";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import { Link, BrowserRouter as Router, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IconLogo, IconLogout, IconWallet } from "../Icons/Icons";
 import { Button } from "../ui/button";
 import Footer from "../Footer/Footer";
 
 const Header = () => {
-  // const navigate = useNavigate();
+
 
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   useEffect(() => {
@@ -23,10 +22,7 @@ const Header = () => {
       document.body.classList.remove("menu-open");
     };
   }, [isMenuToggled]);
-  // const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
-  // const isIpadScreens = useMediaQuery(
-  //   "(min-width: 744px) and (max-width: 1199px)"
-  // );
+
 
   return (
     <div>

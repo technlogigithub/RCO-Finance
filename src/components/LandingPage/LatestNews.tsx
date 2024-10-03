@@ -1,4 +1,4 @@
-import { IconDatabase } from "../Icons/Icons";
+
 import Cards from "../shared/Cards";
 import Container from "../shared/Container";
 import OwlCarousel from "react-owl-carousel";

@@ -5,7 +5,7 @@ import Innovative from "@/components/LandingPage/Innovative";
 import LatestNews from "@/components/LandingPage/LatestNews";
 import Offer from "@/components/LandingPage/Offer";
 import PowerfulPerformance from "@/components/LandingPage/PowerfulPerformance";
-import RcofHolder from "@/components/LandingPage/RCOFHolder";
+import RcofHolders from "@/components/LandingPage/RcofHolders";
 import Roadmap from "@/components/LandingPage/Roadmap";
 import Token from "@/components/LandingPage/Token";
 import Tokenomics from "@/components/LandingPage/Tokenomics";
@@ -24,7 +24,7 @@ const Home = () => {
         </div>
         <div className="px-20">
           <CompareUs />
-          <RcofHolder />
+          <RcofHolders />
         </div>
         <div className="bg-black-dark px-20">
           <Token />

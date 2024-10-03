@@ -4,30 +4,7 @@ import Container from "../shared/Container";
 import Cards from "../shared/Cards";
 import { IconDatabase, IconSpeed, IconUnion } from "../Icons/Icons";
 
-const roadmapItems = [
-    {
-        title:"Launch Presale",
-        phase:"Ignition Phase",
-        phaseItems : [
-            { heading: "Whitepaper and Website Launch" },
-            { heading: "Platform Setup" },
-            { heading: "Security Check" },
-            { heading: "Smart Contract Audit" },
-          ]
-    },
-    {
-        title:"Launch RCO Finance Platform",
-        phase:"Ignition Phase",
-        phaseItems : [
-            { heading: "Whitepaper launch" },
-            { heading: "Unveiling the website" },
-            { heading: "Smart Contract Development" },
-            { heading: "Contract security audit" },
-            { heading: "Community setup" },
-            { heading: "Social media blitz" },
-          ]
-    }
-]
+
 const Roadmap = () => {
   const [activePhase, setActivePhase] = useState(1);
   const [progress, setProgress] = useState(0);
@@ -106,6 +83,8 @@ const Roadmap = () => {
     { heading: "Further Smart Contract Audits" },
     { heading: "KOL Partnerships" },
   ];
+
+  console.log(activePhase)
   return (
     <Container>
       <div className="flex flex-col items-center">

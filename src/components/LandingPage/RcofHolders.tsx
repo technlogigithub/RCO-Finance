@@ -35,7 +35,7 @@ const holderList = [
       "By holding and staking RCOF tokens, you contribute to platform liquidity and receive additional RCOF tokens as rewards. Plus, you'll earn dividends from the platform’s revenue, giving you a share of its profits based on the size of your holdings. The more tokens you hold, the more you earn.",
   },
 ];
-const RcofHolder = () => {
+const RcofHolders = () => {
   return (
     <Container>
       <div className="flex items-center mb-24">
@@ -76,4 +76,4 @@ const RcofHolder = () => {
   );
 };
 
-export default RcofHolder;
+export default RcofHolders;

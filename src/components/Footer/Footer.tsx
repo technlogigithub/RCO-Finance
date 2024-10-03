@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faFacebook, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -7,7 +7,6 @@ import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 
 const Footer = ({ isMainMenu = true }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const socialMediaIcons = [
     {
       name: faLinkedin,
@@ -36,36 +35,24 @@ const Footer = ({ isMainMenu = true }) => {
     { label: 'Whitepaper', id: 'whitepaper' },
     { label: 'Blogs', id: 'Blogs' },
   ];
-  const handleLinkClick = (id:string) => {
-    // Close the menu
-    setMenuOpen(false);
-
-    // Scroll to the section
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 700,
-        behavior: "smooth",
-      });
-    }
-  };
+ 
   return (
     <footer
       className={cn("z-30 relative bg-dark-black text-white px-5 sm:px-10 lg:px-20", !isMainMenu ? "py-8" : "max-lg:pt-12 lg:py-20 max-lg:pb-2")}
     >
 {isMainMenu && (
-        <div className="flex justify-center lg:justify-between items-center pb-8 lg:pb-20 max-lg:flex-wrap">
+        <div className="flex justify-between items-center pb-8 lg:pb-20 max-lg:flex-wrap">
           <Link to={"/"} className="mr-8">
             <IconLogo/>
           </Link>
-          <ul className="flex gap-6 2xl:gap-12 max-2xl:flex-wrap max-lg:mt-8 max-lg:justify-center text-secondary">
+          <ul className={cn("flex gap-6 2xl:gap-12 max-2xl:flex-wrap max-lg:justify-center text-secondary", !isMainMenu && "mt-8 " )}>
             {mainLink.map((link) => (
               <li key={link.label}>
                 
                 <Button
                 variant="ghost"
                 key={link.label}
-                onClick={() => handleLinkClick(link.id)}
+                onClick={() => {}}
                 className="text-xs lg:text-sm font-normal  font-rubik hover:opacity-70 p-0"
               >
                 {link.label}
@@ -81,8 +68,8 @@ const Footer = ({ isMainMenu = true }) => {
         <div className={cn("text-[10px] sm:text-sm 2xl:text-lg max-lg:order-2 max-lg:basis-full text-[#FEFEFE]", !isMainMenu ? "hidden" : "flex")}>
           &copy; 2024 DeRent. All Right Reserved
         </div>
-        <div className="flex lg:space-x-24 items-center max-lg:flex-wrap max-lg:justify-center w-full">
-          <div className={cn("flex space-x-24 max-lg:order-2 w-full", !isMainMenu && "justify-between mt-6" )}>
+        <div className={cn("flex lg:space-x-24 items-center max-lg:flex-wrap max-lg:justify-center", !isMainMenu && "w-full")}>
+          <div className={cn("flex space-x-24 max-lg:order-2", !isMainMenu && "justify-between mt-6  w-full" )}>
             <Link to={"/"} className="underline text-extra-[#FEFEFE] max-w-sm:font-normal text-xs sm:text-sm">
               Terms of Use
             </Link>

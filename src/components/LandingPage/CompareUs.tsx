@@ -2,7 +2,6 @@ import Container from "../shared/Container";
 import {
     IconCheck,
   IconExcution,
-  IconLaywer,
   IconLeverage,
   IconLogo,
   IconNoKyc,
