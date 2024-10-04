@@ -35,11 +35,15 @@ const LatestNews = () => {
     responsive: {
       0: {
         items: 1,
+        margin:16,
+        stagePadding:30
       },
       800: {
         items: 2,
+        margin:16,
+        stagePadding: 30,
       },
-      1000: {
+      1536: {
         items: 3,
       },
     },
@@ -47,17 +51,17 @@ const LatestNews = () => {
     dots: false,
     autoHeight: false,
     stagePadding: 80,
+    margin:40
   };
   return (
     <Container>
-      <div className="mb-24">
+      <div className="mb-8 md:mb-12 lg:mb-16 2xl:mb-24">
         <h2 className="text-secondary/50">Our Latest News</h2>
       </div>
-      <div className="-mr-20">
+      <div className="-mr-5 md:-mr-10 lg:-mr-12 lgg:-mr-16 2xl:-mr-20 max-sm:mb-14">
         <OwlCarousel
           className="owl-theme section offerCarousel"
-          loop={false}
-          margin={40}
+          loop={true}
           autoplay={false}
           {...options}
         >

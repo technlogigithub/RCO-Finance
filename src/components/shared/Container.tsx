@@ -7,7 +7,7 @@ interface ContainerProps{
 
 const Container: FC<ContainerProps> = ({ children, classNames }) => {
   return (
-    <div className={`py-36 text-white ${classNames ? classNames : ''}`}>
+    <div className={`py-12 sm:py-20 lg:py-24 2xl:py-36 text-white ${classNames ? classNames : ''}`}>
         {children}
     </div>
   )

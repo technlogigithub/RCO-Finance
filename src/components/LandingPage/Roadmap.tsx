@@ -93,11 +93,11 @@ const Roadmap = () => {
       </div>
 
       <div
-        className="roadmap-section text-white bg-map-bg w-full bg-center bg-contain bg-no-repeat px-20"
+        className="relative text-white bg-map-bg w-full bg-center bg-cover md:bg-contain bg-no-repeat pt-16 2xl:pt-40 pb-0 px-0 lg:px-4 2xl:px-12 min-[1740px]:px-32"
         id="roadmap"
       >
-        <div className="grid items-center grid-cols-2 gap-48">
-            <Cards classNames="h-auto w-auto mb-7">
+        <div className="flex max-md:flex-col md:grid items-center grid-cols-2 gap-5 md:gap-48 max-md:w-[80%] max-md:mb-12">
+            <Cards classNames="h-auto w-auto mb-7 max-md:order-2">
               <div
                 className="flex flex-col justify-center items-center"
                 data-aos="fade-up"
@@ -105,7 +105,7 @@ const Roadmap = () => {
                 data-aos-duration="3000"
               >
                 <h4 className="">Launch Presale</h4>
-                <ul className="mt-6 flex items-center gap-3 flex-wrap justify-center">
+                <ul className="mt-6 flex items-center gap-3 flex-wrap justify-center max-md:flex-col">
                   {phase1.map((phase, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <span className="inline-flex w-1 h-1 rounded-full bg-white"></span>
@@ -118,17 +118,17 @@ const Roadmap = () => {
             <h4>Ignition Phase</h4>
         </div>
         {/* Second Phase */}
-        <div className="grid items-center grid-cols-2 gap-48">
+        <div className="flex max-md:flex-col md:grid items-center grid-cols-2 gap-5 md:gap-48 max-md:w-[80%] max-md:mb-12">
             <h4 className="text-right">Creation Phase</h4>
             <Cards classNames="h-auto w-auto mb-7">
               <div
-                className="flex flex-col justify-center items-center"
+                className="flex flex-col justify-center items-center max-lg:text-center"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="3000"
               >
                 <h4 className="">Launch RCO Finance Platform</h4>
-                <ul className="mt-6 flex items-center gap-3 flex-wrap justify-center">
+                <ul className="mt-6 flex items-center gap-3 flex-wrap justify-center max-md:flex-col">
                   {phase2.map((phase, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <span className="inline-flex w-1 h-1 rounded-full bg-white"></span>
@@ -141,8 +141,8 @@ const Roadmap = () => {
         </div>
 
         {/* Third Phase */}
-        <div className="grid items-center grid-cols-2 gap-48">
-            <Cards classNames="h-auto w-auto mb-7">
+        <div className="flex max-md:flex-col md:grid items-center grid-cols-2 gap-5 md:gap-48 max-md:w-[80%] max-md:mb-12">
+            <Cards classNames="h-auto w-auto mb-7 max-md:order-2">
               <div
                 className="flex flex-col justify-center items-center"
                 data-aos="fade-up"
@@ -150,7 +150,7 @@ const Roadmap = () => {
                 data-aos-duration="3000"
               >
                 <h4 className="">Token Release</h4>
-                <ul className="mt-6 flex items-center gap-3 flex-wrap justify-center">
+                <ul className="mt-6 flex items-center gap-3 flex-wrap justify-center max-md:flex-col">
                   {phase3.map((phase, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <span className="inline-flex w-1 h-1 rounded-full bg-white"></span>
@@ -164,19 +164,19 @@ const Roadmap = () => {
         </div>
 
         {/* Four Phase */}
-        <div className="grid items-center grid-cols-2 gap-48">
+        <div className="flex max-md:flex-col md:grid items-center grid-cols-2 gap-5 md:gap-48 max-md:w-[80%]">
             <h4 className="text-right">Ultimate Phase</h4>
             <Cards classNames="h-auto w-auto mb-7">
               <div
-                className="flex flex-col justify-center items-center"
+                className="flex flex-col justify-center items-center max-lg:text-center"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="3000"
               >
                 <h4 className="">Earn Dividends, Build Community</h4>
-                <ul className="mt-6 flex items-center gap-3 flex-wrap justify-center">
+                <ul className="mt-6 flex items-center gap-3 flex-wrap justify-center max-md:flex-col">
                   {phase4.map((phase, index) => (
-                    <li key={index} className="flex items-center gap-3">
+                    <li key={index} className="flex items-center gap-3 max-lg:text-center">
                       <span className="inline-flex w-1 h-1 rounded-full bg-white"></span>
                       <p>{phase.heading}</p>
                     </li>
@@ -186,7 +186,7 @@ const Roadmap = () => {
             </Cards>
         </div>
 
-        <div className="absolute self-stretch left-1/2 top-64">
+        <div className="absolute self-stretch max-md:right-12 md:left-1/2 top-16 md:top-44 2xl:top-64">
           <div className="roadmap-scale">
             <div className="roadmap-progress-area">
               <div className="roadmap-progress-bar" id="roadmapProgressBar">
@@ -198,9 +198,9 @@ const Roadmap = () => {
                   <div className="w-[70px] h-[70px] rounded-full bg-primary flex justify-center items-center absolute -top-4 -left-8"><IconUnion/></div>
                   
 
-                  <div className="w-[70px] h-[70px] rounded-full bg-primary flex justify-center items-center absolute top-[216px] -left-8"><IconSpeed/></div>
+                  <div className="w-[70px] h-[70px] rounded-full bg-primary flex justify-center items-center absolute top-[370px] sm:top-[390px] md:top-[375px] min-[900px]:top-[280px] min-1100:top-[225px] -left-8"><IconSpeed/></div>
           
-                <div className="w-[70px] h-[70px] rounded-full bg-primary flex justify-center items-center absolute top-[456px] -left-8"><IconDatabase/></div>
+                <div className="w-[70px] h-[70px] rounded-full bg-primary flex justify-center items-center absolute top-[785px] sm:top-[840px] md:top-[775px]  min-[900px]:top-[595px] min-[1100px]:top-[504px] min-[1400px]:top-[470px] -left-8"><IconDatabase/></div>
                 <div className="w-[70px] h-[70px] rounded-full bg-primary flex justify-center items-center absolute -bottom-16 -left-8"><IconUnion/></div>
               </div>
             </div>

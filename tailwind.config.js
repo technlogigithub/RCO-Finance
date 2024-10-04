@@ -37,8 +37,10 @@ export default {
 			},
 			green:{
 				DEFAULT:"hsl(var(--green))"
+			},
+  			gray:{
+				light:"hsl(var(--gray-light))"
 			}
-  			
   		
   		},
 		  backgroundImage: {
@@ -48,7 +50,10 @@ export default {
 			'map-bg': "url('/map.png')",
 		  },
 		  screens:{
-			lg:"1199px"
+			lgg:"1365px",
+			lg:"1199px",
+			xmd:"980px",
+			'min-1100': '1100px', 
 		  }
   	}
   },

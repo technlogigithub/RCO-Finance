@@ -1,5 +1,5 @@
 .font-24{
-    @apply text-[18px] 2xl:text-2xl font-bold
+    @apply text-sm sm:text-[18px] 2xl:text-2xl font-bold
 }
 
 
@@ -8,15 +8,13 @@
 }
 
 
-.roadmap-section{
+/* .roadmap-section{
     width: 100%;
     padding: 150px 120px 0px 120px;
-
-  
     position: relative;
   
   }
-  
+   */
   .roadmap-button{
     text-align: -webkit-center;
     z-index: 20;
@@ -37,10 +35,9 @@
   }
 
   .roadmap-progress-bar{
+    @apply h-[1255px] sm:h-[1330px] md:h-[1196px] min-[900px]:h-[944px] min-[1100px]:h-[830px] min-[1280px]:h-[790px] min-[1400px]:h-[740px];
     position: relative;
     width: 2px;
-    /* height: 967px; */
-    height: 705px;
     flex-shrink: 0;
     border-radius: 32px;
     background: rgba(255, 255, 255, 0.15);
@@ -109,3 +106,6 @@
     transition: height 0.2s ease-out;
     z-index: -1;
   }
+
+
+  

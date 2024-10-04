@@ -6,7 +6,7 @@ interface CardsProps{
 }
 const Cards:FC<CardsProps> = ({ children, classNames })  => {
   return (
-    <div className={`w-full h-96 bannerBtnShadow rounded-[32px] px-8 py-12 ${classNames ? classNames : ''}`}>
+    <div className={`w-full h-96 bannerBtnShadow rounded-[32px] px-6 lg:px-8 py-12 ${classNames ? classNames : ''}`}>
          {children}
     </div>
   )

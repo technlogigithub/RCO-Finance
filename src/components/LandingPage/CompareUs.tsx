@@ -10,6 +10,7 @@ import {
   IconSpreads,
 } from "../Icons/Icons";
 import Cards from "../shared/Cards";
+import { cn } from "@/lib/utils";
 
 const compareItems = [
   {
@@ -134,11 +135,11 @@ const CompareUs = () => {
   return (
     <Container>
       <div className="text-center">
-        <h2 className="max-w-96 mx-auto mb-16">
-          Compare Us
+        <h2 className="max-w-96 mx-auto mb-8 sm:mb-12 lg:mb-16">
+          Compare Us <br/>
           <span className="text-secondary/50"> With Others </span>
         </h2>
-        <ul className="flex items-center flex-wrap gap-12 min-h-16 justify-center">
+        <ul className="flex items-center flex-wrap gap-6 sm:gap-4 xl:gap-12 min-h-16 justify-center">
           {compareItems.map((item) => (
             <li className="flex items-center gap-2" key={item.title}>
               {item.icon}
@@ -146,10 +147,10 @@ const CompareUs = () => {
             </li>
           ))}
         </ul>
-        <div className="flex gap-4 mt-16 max-xl:flex-wrap">
+        <div className="flex gap-4 mt-8 sm:mt-16 max-2xl:flex-wrap justify-center">
           {compareBox.map((item) => (
             <Cards
-              classNames="h-auto w-auto text-left"
+              classNames={cn("h-auto w-auto text-left", item.id === 1  ? "max-lg:basis-full max-2xl:basis-[49%]" : "max-sm:basis-full max-lg:basis-[48%] max-2xl:basis-[32%]",  item.id === 2 && "max-sm:basis-full max-lg:basis-[48%] max-2xl:basis-[49%]" )}
               key={item.id}
             >
                 <h4>{item.heading}</h4>

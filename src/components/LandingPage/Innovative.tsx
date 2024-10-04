@@ -7,7 +7,7 @@ const Innovative = () => {
     <Container>
       <div className="max-w-[1000px] flex flex-col justify-center items-center text-center mx-auto">
         <h2>
-          Innovative Problem-Solving for{" "}
+          Innovative Problem-Solving for{" "} <br/>
           <span className="text-secondary/50">Your Business Needs</span>
         </h2>
         <div className="max-w-[820px] mx-auto">
@@ -24,7 +24,7 @@ const Innovative = () => {
           </p>
         </div>
       </div>
-      <div className="my-24">
+      <div className="mt-8 sm:mt-12 lg:mt-16 2xl:my-24">
         <Cards>
           <video
             className="w-full h-full rounded-[32px]"
@@ -38,7 +38,7 @@ const Innovative = () => {
           </video>
         </Cards>
       </div>
-      <div className="mt-20 flex justify-center">
+      <div className="mt-8 sm:mt-12 lg:mt-16 2xl:mt-20 flex justify-center">
         <GlobalButton title="Read Whitepaper" />
       </div>
     </Container>

@@ -38,14 +38,14 @@ const holderList = [
 const RcofHolders = () => {
   return (
     <Container>
-      <div className="flex items-center mb-24">
-        <div className=" basis-2/5">
+      <div className="flex items-center mb-8 sm:mb-16 2xl:mb-24 max-lg:flex-wrap max-lg:justify-center max-lg:text-center">
+        <div className="lg:basis-2/5 max-lg:pb-12">
           <h2 className="max-w-2xl">
             Become $RCOF <br />
             <span className="text-secondary/50">HODLer</span>
           </h2>
         </div>
-        <div className="basis-3/5">
+        <div className="lg:basis-3/5">
           <video
             className="w-full h-full"
             src="/video/coin.webm"
@@ -56,7 +56,7 @@ const RcofHolders = () => {
           ></video>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-6 mb-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 lg:mb-16 2xl:mb-24">
         {holderList.map((item) => (
           <Cards
             classNames="flex items-center h-auto w-auto text-center"

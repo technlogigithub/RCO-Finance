@@ -15,30 +15,30 @@ const Home = () => {
     <div>
       <Banner />
       <div className="bg-foreground">
-        <div className="px-20">
+        <div className="px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20">
           <Innovative />
           <PowerfulPerformance />
         </div>
-        <div className="bg-black-dark px-20">
+        <div className="bg-black-dark px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20">
           <Offer />
         </div>
-        <div className="px-20">
+        <div className="px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20">
           <CompareUs />
           <RcofHolders />
         </div>
-        <div className="bg-black-dark px-20">
+        <div className="bg-black-dark px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20">
           <Token />
         </div>
-        <div className="px-20">
+        <div className="px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20">
           <Roadmap/>
         </div>
-        <div className="bg-token-bg w-full bg-top bg-cover bg-no-repeat px-20">
+        <div className="bg-token-bg w-full bg-top bg-cover bg-no-repeat px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20">
           <Tokenomics />
         </div>
-        <div className="px-20">
+        <div className="px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20">
           <Faq/>
         </div>
-        <div className="bg-black-dark px-20">
+        <div className="bg-black-dark px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20">
           <LatestNews/>
         </div>
       </div>

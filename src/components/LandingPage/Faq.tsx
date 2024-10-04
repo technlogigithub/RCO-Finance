@@ -38,7 +38,7 @@ const Faq = () => {
   return (
     <Container>
       <div id="faq">
-        <h2 className="text-secondary/50">
+        <h2 className="text-secondary/50 max-lg:text-center">
           Frequently Asked Question
         </h2>
         <div className="text-white mt-4">

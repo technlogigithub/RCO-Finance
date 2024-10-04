@@ -38,10 +38,16 @@ const Token = () => {
           0: {
             items: 1,
           },
-          800: {
+          640: {
             items: 2,
           },
-          1000: {
+          900: {
+            items: 3,
+          },
+          1199: {
+            items:4,
+          },
+          1536: {
             items: 5,
           },
         },
@@ -57,7 +63,7 @@ const Token = () => {
           <span className="text-secondary/50">Remunerations</span>
         </h2>
       </div>
-      <div className="mt-24">
+      <div className="mt-8 sm:mt-16 2xl:mt-24">
       <OwlCarousel
         className="owl-theme section tokenCarousel"
         loop={false}
@@ -73,14 +79,14 @@ const Token = () => {
                 </div>
                 <p className="py-8">Holding</p>
                 <h3 className="pb-8">{item.amount}</h3>
-                <IconLineArrow/>
+                <IconLineArrow className="max-2xl:w-[230px]"/>
                 <p className="-mt-4">{item.value} dividends</p>
             </Cards>
         ))}
        
       </OwlCarousel>
       </div>
-      <div className="mt-24 flex justify-end">
+      <div className="mt-24 sm:mt-12 lg:mt-16 2xl:mt-24 flex justify-center sm:justify-end">
         <GlobalButton title="Join Presale" />
       </div>
     </Container>

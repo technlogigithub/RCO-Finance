@@ -51,7 +51,7 @@ function Timer() {
     <div className="flex text-3xl font-bold max-lg:justify-center">
       <div className="flex">
         <div className="text-center">
-            <h3 className="bg-secondary/10 px-4 sm:p-6 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-24 2xl:h-24 text-center leading-tight max-sm:text-sm max-lg:text-2xl bannerBtnShadow font-clashDisplay-medium flex items-center justify-center">
+            <h3 className="bg-secondary/10 px-4 sm:p-6 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-24 max-sm:h-12 2xl:h-24 text-center leading-tight max-sm:text-sm max-lg:text-2xl bannerBtnShadow font-clashDisplay-medium flex items-center justify-center">
               {formatNumber(timeLeft.days)}{" "}
             </h3>
             <p className="text-[10px] sm:text-sm uppercase pt-2 font-normal">Days</p>
@@ -62,7 +62,7 @@ function Timer() {
       </div>
       <div className="flex">
         <div className="text-center">
-        <h3 className="bg-secondary/10 px-4 sm:p-6 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-24 2xl:h-24 text-center leading-tight max-sm:text-sm max-lg:text-2xl bannerBtnShadow font-clashDisplay-medium flex items-center justify-center">
+        <h3 className="bg-secondary/10 px-4 sm:p-6 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-24 max-sm:h-12 2xl:h-24 text-center leading-tight max-sm:text-sm max-lg:text-2xl bannerBtnShadow font-clashDisplay-medium flex items-center justify-center">
             {formatNumber(timeLeft.hours)}
           </h3>
           <p className="text-[10px] sm:text-sm uppercase font-normal pt-2">Hours</p>
@@ -73,7 +73,7 @@ function Timer() {
       <div className="flex">
       <div className="text-center">
         
-      <h3 className="bg-secondary/10 px-4 sm:p-6 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-24 2xl:h-24 text-center leading-tight max-sm:text-sm max-lg:text-2xl bannerBtnShadow font-clashDisplay-medium flex items-center justify-center">
+      <h3 className="bg-secondary/10 px-4 sm:p-6 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-24 max-sm:h-12 2xl:h-24 text-center leading-tight max-sm:text-sm max-lg:text-2xl bannerBtnShadow font-clashDisplay-medium flex items-center justify-center">
             {formatNumber(timeLeft.minutes)}
           </h3>
           <p className="text-[10px] sm:text-sm uppercase font-normal pt-2">Minutes</p>
@@ -83,7 +83,7 @@ function Timer() {
       </div>
       <div className="flex items-center">
         <div className="text-center">
-        <h3 className="bg-secondary/10 px-4 sm:p-6 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-24 2xl:h-24 text-center leading-tight max-sm:text-sm max-lg:text-2xl bannerBtnShadow font-clashDisplay-medium flex items-center justify-center">
+        <h3 className="bg-secondary/10 px-4 sm:p-6 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-24 max-sm:h-12 2xl:h-24 text-center leading-tight max-sm:text-sm max-lg:text-2xl bannerBtnShadow font-clashDisplay-medium flex items-center justify-center">
             {formatNumber(timeLeft.seconds)}
           </h3>
           <p className="text-[10px] sm:text-sm uppercase font-normal pt-2">Seconds</p>

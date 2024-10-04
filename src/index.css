@@ -18,7 +18,7 @@
     --black-dark:234, 53%, 7%, 1;
     --black-light:220.65deg 13.19% 46.08%;
     --green:150.79deg 73.08% 40.78%;
-
+    --gray-light:0deg 0% 99.61%;
     --radius: 0.5rem;
   }
   .dark {
@@ -72,7 +72,7 @@
     font-style: normal;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-foreground overflow-x-hidden;
   }
 }
 .font-rubik {
@@ -94,10 +94,10 @@
   @apply overflow-hidden
 }
 h1{
-  @apply leading-[114px] 2xl:leading-[135px] text-[92px] 2xl:text-[110px]
+  @apply leading-10 sm:leading-[66px] lg:leading-[80px] xl:leading-[114px] 2xl:leading-[135px] text-[32px] sm:text-[54px] lg:text-[64px] xl:text-[92px] 2xl:text-[110px]
 }
 h2{
-  @apply leading-[74px] text-[60px];
+  @apply leading-[30px] sm:leading-[60px] 2xl:leading-[74px] text-2xl sm:text-[48px] 2xl:text-[60px];
   font-family: "ClashDisplay-Medium";
 }
 h3{
@@ -105,7 +105,7 @@ h3{
   font-family: "Satoshi", sans-serif;
 }
 h4{
-  @apply text-2xl font-bold;
+  @apply text-[18px] sm:text-2xl font-bold;
   font-family: "Satoshi", sans-serif;
 }
 h5{
@@ -113,7 +113,7 @@ h5{
   font-family: "Satoshi", sans-serif;
 }
 p {
-  @apply text-base;
+  @apply text-sm sm:text-base;
   font-family: "Satoshi", sans-serif;
 }
 .btn-shadow {
@@ -147,27 +147,30 @@ p {
   backdrop-filter: blur(1.3230681419372559px)
 }
 .owl-carousel .owl-nav button, .owl-carousel .owl-nav button{
-  @apply w-14 h-14 !border-[3px] !border-solid !border-transparent !bg-white !rounded-full !text-black-dark !mx-2;
+  @apply w-8 sm:w-14 h-8 sm:h-14 !border-[3px] !border-solid !border-transparent !bg-white !rounded-full !text-black-dark !mx-2;
   box-shadow: 0px 0px 12.78px 0px rgba(49, 119, 255, 0.5) inset;
   box-shadow: 0px 0px 127.79px 0px rgba(49, 119, 255, 0.5);
   box-shadow: 0px 0px 33.01px 0px rgba(49, 119, 255, 0.7);
   backdrop-filter: blur(0.9431301951408386px);
 }
 .owl-carousel .owl-nav button span, .owl-carousel .owl-nav button span{
- @apply text-5xl leading-[24px]
+ @apply text-3xl sm:text-5xl leading-[18px] sm:leading-[24px]
 }
 .owl-carousel .owl-nav button.disabled, .owl-carousel .owl-nav button.disabled{
   @apply  !border-[3px] !border-solid !border-white !rounded-full !bg-black-dark !text-white;
 }
 .offerCarousel.owl-carousel .owl-nav{
-  @apply absolute right-20 -top-52
+  @apply absolute right-5 md:right-10 lg:right-12 lgg:right-16 2xl:right-20 sm:-top-[105px] md:-top-[120px] lg:-top-[136px] 2xl:-top-44 max-sm:left-0 max-sm:-bottom-[70px] max-sm:justify-between max-sm:flex
 }
 .tokenCarousel.owl-carousel .owl-nav{
-  @apply absolute left-0 -bottom-[157px]
+  @apply absolute left-0 -bottom-[70px] sm:-bottom-[108px] lg:-bottom-[126px] 2xl:-bottom-[157px] max-sm:right-0 max-sm:justify-between max-sm:flex
 }
 .offerCarousel.owl-carousel .owl-stage{
   @apply !pl-0
 }
 .owl-theme .owl-nav.disabled + .owl-dots{
-  @apply relative z-10 !-mt-[48px]
+  @apply relative z-10 !-mt-[28px] 2xl:!-mt-[48px]
+}
+.offerCarousel.owl-carousel .owl-stage{
+  @apply !items-start
 }

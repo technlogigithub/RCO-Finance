@@ -24,10 +24,10 @@ const listItem = [
 ]
   return (
     <Container>
-      <div className="mb-24">
+      <div className="mb-8 sm:mb-16 2xl:mb-24 max-lg:-mx-4">
         <img src="./powerfullperformance.png" alt="powerfullperformance" />
       </div>
-      <div className="max-w-[1000px] flex flex-col justify-center items-center text-center mx-auto mb-24">
+      <div className="max-w-[1000px] flex flex-col justify-center items-center text-center mx-auto mb-12 lg:mb-24">
         <h2>
           AI-Powered for <br/>
           <span className="text-secondary/50"> Powerful Performance</span>
@@ -45,17 +45,17 @@ const listItem = [
           <p>Let the future of finance work for you.</p>
         </div>
       </div>
-      <ul  className="flex items-center gap-6 flex-wrap justify-center">
+      <ul  className="flex items-center gap-3 sm:gap-6 flex-wrap sm:justify-center">
         {listItem.map((item) => (
-          <li className="flex items-center gap-4 pb-2" key={item.title}>
+          <li className="flex items-center gap-4 lg:pb-2" key={item.title}>
             <div className="w-7 h-7 greenBoxShadow flex items-center bg-white rounded-full opacity-70">
               <IconCheck />
             </div>
-            <p>{item.title}</p>
+            <p className="max-sm:text-sm">{item.title}</p>
           </li>
         ))}
       </ul>
-      <div className="mt-24 flex justify-center">
+      <div className="mt-8 sm:mt-12 lg:mt-16 2xl:mt-24 flex justify-center">
         <GlobalButton title="Join Presale" />
       </div>
     </Container>
