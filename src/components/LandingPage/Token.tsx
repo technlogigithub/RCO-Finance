@@ -79,7 +79,7 @@ const Token = () => {
                 </div>
                 <p className="py-8">Holding</p>
                 <h3 className="pb-8">{item.amount}</h3>
-                <IconLineArrow className="max-2xl:w-[230px]"/>
+                <IconLineArrow className="max-[1600px]:w-[210px]"/>
                 <p className="-mt-4">{item.value} dividends</p>
             </Cards>
         ))}
