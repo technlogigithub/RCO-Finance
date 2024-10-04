@@ -8,7 +8,6 @@ import {
 import "./landing.css";
 import Timer from "../shared/Timer";
 import GlobalButton from "../shared/GlobalButton";
-import RadialBarChart from "./RadialBarChart";
 
 const Banner = () => {
   const options = {
