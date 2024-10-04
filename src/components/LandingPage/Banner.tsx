@@ -8,6 +8,7 @@ import {
 import "./landing.css";
 import Timer from "../shared/Timer";
 import GlobalButton from "../shared/GlobalButton";
+import RadialBarChart from "./RadialBarChart";
 
 const Banner = () => {
   const options = {
@@ -31,7 +32,7 @@ const Banner = () => {
         {...options}
       >
         {/* Carousel items */}
-        <div className="flex items-center bg-hero-pattern w-full  h-[890px] sm:h-[1140px] lg:h-[800px] xl:h-[900px] 2xl:h-[1080px] bg-top bg-cover bg-no-repeat">
+        <div className="flex items-center bg-hero-pattern w-full  h-[975px] sm:h-[1140px] lg:h-[800px] xl:h-[900px] 2xl:h-[1080px] bg-top bg-cover bg-no-repeat">
           <div className="flex items-center px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20 pt-16 2xl:pt-40 max-lg:flex-wrap max-lg:justify-center">
             <div className="text-white lg:basis-3/5 max-2xl:pr-6 max-lg:order-2 max-lg:mt-14 max-lg:text-center">
               <h1 className="mb-2 font-clashDisplay-regular">
@@ -68,7 +69,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="pb-4 bg-hero-pattern w-full h-[890px] sm:h-[1140px] xl:h-[900px] 2xl:h-[1080px] bg-top bg-cover bg-no-repeat">
+        <div className="pb-4 bg-hero-pattern w-full h-[975px] sm:h-[1140px] xl:h-[900px] 2xl:h-[1080px] bg-top bg-cover bg-no-repeat">
           <div className="px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20 pt-28 xl:pt-40">
             <div className="text-white max-w-[1150px] mx-auto text-center flex flex-col items-center">
               <h1 className="font-clashDisplay-bold">
@@ -82,13 +83,14 @@ const Banner = () => {
                   <IconTrophy />
                   <p className="font-24">1st Round</p>
                 </div>
-                <div className="flex items-center gap-6 lg:gap-12 my-4 lg:my-8 max-lg:flex-wrap max-lg:justify-center">
-                  <div className="lg:hidden  sm:w-64 sm:h-64  max-lg:basis-full">
-                    <img
+                <div className="flex items-center gap-6 my-4 lg:my-8 max-lg:flex-wrap max-lg:justify-center">
+                  <div className="lg:hidden  max-lg:basis-full max-lg:-mb-16">
+                    {/* <img
                       src="/first_round.png"
                       alt="first round"
                       className="!w-[200px] h-[200px] mx-auto"
-                    />
+                    /> */}
+                    <RadialBarChart/>
                   </div>
                   <div className="flex flex-col items-center max-sm:w-full">
                     <div className="flex items-center gap-4 sm:gap-6 lg:gap-0 px-8 py-4 sm:py-6 lg:py-12 bg-secondary/10 bannerBtnShadow rounded-[32px] max-sm:flex-row max-lg:flex-col max-lg:min-w-72 max-sm:w-full max-sm:justify-center">
@@ -104,9 +106,9 @@ const Banner = () => {
                     </div>
                   </div>
                   <div className="max-lg:hidden w-[250px] h-[250px]">
-                    <img src="/first_round.png" alt="first round" />
+                    {/* <img src="/first_round.png" alt="first round" /> */}
                    
-                    {/* <RadialBarChart/> */}
+                    <RadialBarChart/>
                   </div>
                   <div className="flex flex-col items-center max-sm:w-full">
                     <div className="flex items-center gap-4 sm:gap-6 px-8 py-4 sm:py-6 lg:py-12 bg-secondary/10 bannerBtnShadow rounded-[32px] max-sm:flex-row max-lg:flex-col max-lg:min-w-72 max-sm:w-full max-sm:justify-center">
@@ -122,7 +124,7 @@ const Banner = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-sm:hidden lg:-ml-16">
+                <div className="max-sm:hidden max-lg:mt-6 lg:-ml-16">
                   <GlobalButton
                     title="Join Presale"
                     icon={<IconRightArrow />}
@@ -169,7 +171,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="flex items-center pb-4 bg-hero-pattern-three w-full  h-[890px] sm:h-[1140px] xl:h-[900px] 2xl:h-[1080px] bg-top bg-cover bg-no-repeat max-sm:mt-0 max-lg:-mt-[280px]">
+        <div className="flex items-center pb-4 bg-hero-pattern-three w-full  h-[975px] sm:h-[1140px] xl:h-[900px] 2xl:h-[1080px] bg-top bg-cover bg-no-repeat max-sm:mt-0 max-lg:-mt-[280px]">
           <div className="text-white max-w-[1150px] mx-auto text-center flex flex-col items-center px-5 md:px-10 lg:px-12 lgg:px-16 2xl:px-20 sm:pt-28 xl:pt-40">
             <h1 className="font-clashDisplay-bold capitalize">
               Beta platform <br />
