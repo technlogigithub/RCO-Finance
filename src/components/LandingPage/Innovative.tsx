@@ -33,6 +33,7 @@ const Innovative = () => {
             autoPlay
             loop
             muted
+            playsInline
           >
             Your browser does not support the video tag.
           </video>

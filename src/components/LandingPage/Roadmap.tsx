@@ -5,7 +5,7 @@ import Cards from "../shared/Cards";
 import { IconDatabase, IconSpeed, IconUnion } from "../Icons/Icons";
 
 const Roadmap = () => {
-  const [activePhase, setActivePhase] = useState(1);
+  // const [activePhase, setActivePhase] = useState(1);
   const [progress, setProgress] = useState(0);
   const [phaseColors, setPhaseColors] = useState([
     "bg-gray-300",
@@ -99,7 +99,7 @@ const Roadmap = () => {
     { heading: "KOL Partnerships" },
   ];
 
-  console.log(activePhase);
+  // console.log(activePhase);
   return (
     <Container>
       <div className="flex flex-col items-center">

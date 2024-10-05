@@ -64,6 +64,7 @@ const Banner = () => {
                 autoPlay
                 loop
                 muted
+                playsInline
               ></video>
             </div>
           </div>

@@ -53,6 +53,7 @@ const RcofHolders = () => {
             autoPlay
             loop
             muted
+            playsInline
           ></video>
         </div>
       </div>
