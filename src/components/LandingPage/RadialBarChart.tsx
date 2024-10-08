@@ -10,7 +10,7 @@ const RadialBarChart = () => {
       },
       plotOptions: {
         radialBar: {
-            startAngle: -185,
+            startAngle: -170,
             endAngle: 225,
           hollow: {
             size: "50%", 
@@ -45,7 +45,20 @@ const RadialBarChart = () => {
           },
         },
       },
-      labels: ["Solid"], 
+      fill: {
+        colors: ['#5B40FF'] // Added fill color
+      },
+      radialBar: {
+        innerShadow: {
+          enabled: true,
+          opacity: 0.5,
+          color: '#fff'
+        }
+      },
+      stroke: {
+        lineCap: "round" as const, // Updated lineCap type
+      },
+      labels: ["Sold"], 
     },
   };
 

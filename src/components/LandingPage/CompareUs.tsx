@@ -10,6 +10,7 @@ import {
   IconSpreads,
 } from "../Icons/Icons";
 import Cards from "../shared/Cards";
+import CardsPlain from "../shared/CardsPlain";
 import { cn } from "@/lib/utils";
 import OwlCarousel from "react-owl-carousel";
 
@@ -199,7 +200,37 @@ const CompareUs = () => {
         {/* Desktop Code */}
         <div className="hidden sm:flex gap-4 mt-8 sm:mt-16 max-2xl:flex-wrap justify-center">
           {compareBox.map((item) => (
+            item.id === 1
+            ?
             <Cards
+              classNames={cn(
+                "h-auto w-auto text-left",
+                item.id === 1
+                  ? "max-lg:basis-full max-2xl:basis-[49%]"
+                  : "max-sm:basis-full max-lg:basis-[48%] max-2xl:basis-[32%]",
+                // item.id === 2 &&
+                //   "max-sm:basis-full max-lg:basis-[48%] max-2xl:basis-[49%]"
+              )}
+              key={item.id}
+            >
+              <h4>{item.heading}</h4>
+
+              <ul className="mt-8">
+                {item?.listOptions?.map((option) => (
+                  <li
+                    className="flex items-center gap-3 mb-4 last:mb-0"
+                    key={option.text}
+                  >
+                    <div className="w-7 h-7 greenBoxShadow flex items-center bg-white rounded-full opacity-70">
+                      <IconCheck />
+                    </div>
+                    <p>{option.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </Cards>
+            :
+            <CardsPlain
               classNames={cn(
                 "h-auto w-auto text-left",
                 item.id === 1
@@ -225,7 +256,7 @@ const CompareUs = () => {
                   </li>
                 ))}
               </ul>
-            </Cards>
+            </CardsPlain>
           ))}
         </div>
       </div>

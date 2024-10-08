@@ -1,6 +1,6 @@
 import GlobalButton from "../shared/GlobalButton";
 import Container from "../shared/Container";
-import Cards from "../shared/Cards";
+import Cards from "../shared/CardsPlain";
 
 const Innovative = () => {
   return (

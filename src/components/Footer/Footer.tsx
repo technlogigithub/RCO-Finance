@@ -81,7 +81,7 @@ const Footer = ({ isMainMenu = true }) => {
             "text-[10px] md:text-sm 2xl:text-lg max-lg:order-2 max-lg:basis-full text-gray-light flex md:hidden lg:flex max-md:mt-6 justify-center"
           )}
         >
-          &copy; 2024 DeRent. All Right Reserved
+          &copy; 2024 RCO Finance. All Right Reserved
         </div>
         <div
           className={cn(

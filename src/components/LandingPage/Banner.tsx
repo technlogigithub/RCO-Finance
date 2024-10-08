@@ -26,9 +26,9 @@ const Banner = () => {
     <div className="">
       <OwlCarousel
         className="owl-theme section"
-        loop={false}
+        loop={true}
         margin={20}
-        autoplay={false}
+        autoplay={true}
         {...options}
       >
         {/* Carousel items */}
