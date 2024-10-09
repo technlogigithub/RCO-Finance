@@ -94,7 +94,7 @@
   @apply overflow-hidden
 }
 h1{
-  @apply leading-10 sm:leading-[66px] lg:leading-[80px] xl:leading-[90px] min-[1681px]:leading-[125px] text-[32px] sm:text-[54px] lg:text-[64px] xl:text-[80px] min-[1681px]:text-[110px]
+  @apply leading-10 sm:leading-[66px] lg:leading-[80px] xl:leading-[90px] 3xl:leading-[125px] text-[32px] sm:text-[54px] lg:text-[64px] xl:text-[80px] xll:text-[110px]
 }
 h2{
   @apply leading-[30px] sm:leading-[60px] 2xl:leading-[74px] text-2xl sm:text-[48px] 2xl:text-[60px];
@@ -185,3 +185,25 @@ p {
   display: flex;
   align-self:normal
 }
+.radial-chart-container{
+  @apply max-[380px]:!h-[155px] max-lg:!h-[215px]
+}
+
+@media screen and (max-height:1400px) and (max-width: 1199px) {
+  .video-height{
+    height: calc(100vh - 660px);
+  }
+}
+@media screen and (max-height:1000px) and (max-width: 767px) {
+  .video-height{
+    height: calc(100vh - 500px);
+  }
+}
+/* .video-height{
+  @apply h-xl:h-[450px]
+} */
+/* .overlay:after{
+  content: "";
+  background: #000;
+  @apply absolute inset-0 bg-opacity-50
+} */

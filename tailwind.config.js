@@ -50,7 +50,8 @@ export default {
 			'map-bg': "url('/map.png')",
 		  },
 		  screens:{
-			lgg:"1365px",
+			"3xl":"1800px",
+			'xll': '1681px',
 			lg:"1199px",
 			lgg:"1024px",
 			xmd:"980px",
