@@ -1,6 +1,6 @@
 import GlobalButton from "../shared/GlobalButton";
 import Container from "../shared/Container";
-import Cards from "../shared/CardsPlain";
+// import Cards from "../shared/CardsPlain";
 
 const Innovative = () => {
   return (
@@ -24,8 +24,8 @@ const Innovative = () => {
           </p>
         </div>
       </div>
-      <div className="mt-8 sm:mt-12 lg:mt-16 2xl:my-24">
-        <Cards>
+      <div className="mt-8 sm:mt-12 lg:mt-16 2xl:my-24 h-[400px]">
+        {/* <Cards> */}
           <video
             className="w-full h-full rounded-[32px]"
             src="/video/RCO-ready-optimized.mp4"
@@ -37,7 +37,7 @@ const Innovative = () => {
           >
             Your browser does not support the video tag.
           </video>
-        </Cards>
+        {/* </Cards> */}
       </div>
       <div className="mt-8 sm:mt-12 lg:mt-16 2xl:mt-20 flex justify-center">
         <GlobalButton title="Read Whitepaper" />
