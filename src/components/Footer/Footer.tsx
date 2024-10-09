@@ -106,7 +106,7 @@ const Footer = ({ isMainMenu = true }) => {
                 "text-[10px] sm:text-sm   text-gray-light hidden md:flex lg:hidden"
               )}
             >
-              &copy; 2024 DeRent. All Right Reserved
+              &copy; 2024 RCO Finance. All Right Reserved
             </div>
             <Link
               to={"/"}
