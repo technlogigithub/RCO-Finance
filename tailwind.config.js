@@ -52,6 +52,7 @@ export default {
 		  screens:{
 			lgg:"1365px",
 			lg:"1199px",
+			lgg:"1024px",
 			xmd:"980px",
 			'min-1100': '1100px', 
 		  }

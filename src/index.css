@@ -94,7 +94,7 @@
   @apply overflow-hidden
 }
 h1{
-  @apply leading-10 sm:leading-[66px] lg:leading-[80px] xl:leading-[114px] 2xl:leading-[135px] text-[32px] sm:text-[54px] lg:text-[64px] xl:text-[92px] 2xl:text-[110px]
+  @apply leading-10 sm:leading-[66px] lg:leading-[80px] xl:leading-[90px] min-[1681px]:leading-[125px] text-[32px] sm:text-[54px] lg:text-[64px] xl:text-[80px] min-[1681px]:text-[110px]
 }
 h2{
   @apply leading-[30px] sm:leading-[60px] 2xl:leading-[74px] text-2xl sm:text-[48px] 2xl:text-[60px];
