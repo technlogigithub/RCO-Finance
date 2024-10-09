@@ -171,6 +171,9 @@ const CompareUs = () => {
           >
             {/* Carousel items */}
             {compareBox.map((item) => (
+              
+              item.id === 1
+              ?
               <Cards
               classNames={cn(
                 "h-auto w-auto text-left min-h-[430px] sm:min-h-[430px]"
@@ -194,6 +197,30 @@ const CompareUs = () => {
                   ))}
                 </ul>
               </Cards>
+              :
+              <CardsPlain
+              classNames={cn(
+                "h-auto w-auto text-left min-h-[430px] sm:min-h-[430px]"
+              )}
+              
+                key={item.id}
+              >
+                <h4>{item.heading}</h4>
+
+                <ul className="mt-8">
+                  {item?.listOptions?.map((option) => (
+                    <li
+                      className="flex items-center gap-3 mb-4 last:mb-0"
+                      key={option.text}
+                    >
+                      <div className="w-7 h-7 greenBoxShadow flex items-center bg-white rounded-full opacity-70">
+                        <IconCheck />
+                      </div>
+                      <p>{option.text}</p>
+                    </li>
+                  ))}
+                </ul>
+              </CardsPlain>
             ))}
           </OwlCarousel>
         </div>
