@@ -33,7 +33,7 @@ const Offer = () => {
         margin:12,
         stagePadding:30
       },
-      800: {
+      900: {
         items: 2,
         margin:16,
         stagePadding:50
@@ -62,7 +62,7 @@ const Offer = () => {
       </div>
       <div className="-mr-5 md:-mr-10 lg:-mr-12 lgg:-mr-16 2xl:-mr-20 max-sm:mb-14">
       <OwlCarousel
-        className="owl-theme section offerCarousel"
+        className="owl-theme section offerCarousel fullHeight"
         loop={true}
         stagePadding ={80}
         autoplay={false}
@@ -70,7 +70,7 @@ const Offer = () => {
       >
         {/* Carousel items */}
         {featureList.map((item) => (
-            <Cards classNames="flex h-auto w-auto min-h-[460px] min-[480px]:min-h-[360px] min-[800px]:min-h-[500px] min-[1023px]:min-h-[400px] lg:min-h-[320px] 2xl:min-h-[428px] min-[1750px]:min-h-[356px]" key={item.title}>
+            <Cards classNames="flex h-auto w-auto" key={item.title}>
               <div className="flex gap-4 sm:gap-8 max-sm:flex-col">
                 <div className="w-14 h-14 rounded-full bg-primary min-w-14 blueBoxShadow flex items-center justify-center">
                   <IconDatabase />

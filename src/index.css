@@ -181,3 +181,7 @@ p {
   backdrop-filter: blur(113px); /* Set the backdrop-filter */
   background: #1a1b23; /* Set the background color */
 }
+.owl-carousel.fullHeight .owl-item{
+  display: flex;
+  align-self:normal
+}

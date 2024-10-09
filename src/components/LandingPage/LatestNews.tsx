@@ -60,7 +60,7 @@ const LatestNews = () => {
       </div>
       <div className="-mr-5 md:-mr-10 lg:-mr-12 lgg:-mr-16 2xl:-mr-20 max-sm:mb-14">
         <OwlCarousel
-          className="owl-theme section offerCarousel"
+          className="owl-theme section offerCarousel fullHeight"
           loop={true}
           autoplay={false}
           {...options}

@@ -2,7 +2,7 @@
 import Container from "../shared/Container";
 import Cards from "../shared/Cards";
 import GlobalButton from "../shared/GlobalButton";
-
+import OwlCarousel from "react-owl-carousel";
 const holderList = [
   {
     title: "Earn Passive Income",
@@ -36,9 +36,20 @@ const holderList = [
   },
 ];
 const RcofHolders = () => {
+  const options = {
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 30,
+      },
+    },
+    nav: true,
+    dots: false,
+    autoHeight: false,
+  };
   return (
     <Container>
-      <div className="flex items-center mt-[-100px] mb-8 sm:mb-16 2xl:mb-24 max-lg:flex-wrap max-lg:justify-center max-lg:text-center">
+      <div className="flex items-center mb-8 sm:mb-16 2xl:mb-24 max-lg:flex-wrap max-lg:justify-center max-lg:text-center">
         <div className="lg:basis-2/5 max-lg:pb-12">
           <h2 className="max-w-2xl">
             Become $RCOF <br />
@@ -57,7 +68,33 @@ const RcofHolders = () => {
           ></video>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 lg:mb-16 2xl:mb-24">
+      {/* Mobile Code */}
+       {/* {Mobile Slider} */}
+       <div className="sm:hidden mt-8 sm:mt-16 mb-24">
+          <OwlCarousel
+            className="owl-theme section offerCarousel fullHeight"
+            loop={false}
+            margin={16}
+            autoplay={false}
+            {...options}
+          >
+            {/* Carousel items */}
+            {holderList.map((item) => (
+              <Cards
+              classNames="flex items-start h-auto w-auto text-center"
+              key={item.title}
+            >
+              <div className="flex-grow">
+                <h4 className="pb-3">{item.title}</h4>
+                <p>{item.description}</p>
+              </div>
+            </Cards>
+            ))}
+          </OwlCarousel>
+        </div>
+
+      {/* Desktop Code */}
+      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 lg:mb-16 2xl:mb-24">
         {holderList.map((item) => (
           <Cards
             classNames="flex items-center h-auto w-auto text-center"
