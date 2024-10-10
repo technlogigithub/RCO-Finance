@@ -81,7 +81,7 @@ const Banner = () => {
                 </span>
               </h1>
               <div className="flex flex-col items-center mt-4 min-[1360px]:mt-16 mb-4 2xl:my-8">
-                <div className="flex items-center gap-4 lg:-ml-16 max-lg:-mb-4">
+                <div className="flex items-center gap-4 lg:-ml-16 -mb-4 lg:-mb-5">
                   <IconTrophy />
                   <p className="font-24">1st Round</p>
                 </div>
@@ -121,7 +121,7 @@ const Banner = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-sm:hidden max-lg:mt-6 lg:-ml-16">
+                <div className="max-sm:hidden mt-6 lg:-mt-4 lg:-ml-16">
                   <GlobalButton
                     title="Join Presale"
                     icon={<IconRightArrow />}
@@ -144,7 +144,7 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between md:mt-6 lg:mt-0 3xl:mt-14 text-white items-center max-sm:flex-col">
+            <div className="flex justify-between md:mt-6 lg:mt-0 3xl:mt-8 text-white items-center max-sm:flex-col">
               <div className="flex gap-3 mr-4 max-sm:order-2 max-sm:mt-3">
                 <p className="min-w-32 max-sm:text-xs">Audit Completed</p>
                 <img
