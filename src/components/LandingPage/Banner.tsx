@@ -58,7 +58,7 @@ const Banner = () => {
             </div>
             <div className="lg:absolute lg:inset-0 justify-center w-full video-height lg:h-full">
               <video
-                className="w-full h-full rounded-[32px]"
+                className="w-full h-full rounded-[32px] hidden lg:flex"
                 src="/video/banner_AI.mp4"
                 controls ={false}
                 autoPlay
@@ -66,6 +66,17 @@ const Banner = () => {
                 muted
                 playsInline
               ></video>
+
+              <video
+                className="w-full h-full rounded-[32px] flex lg:hidden"
+                src="/video/banner_AI_mobile.mp4"
+                controls ={false}
+                autoPlay
+                loop
+                muted
+                playsInline
+              ></video>
+
             </div>
           </div>
         </div>
